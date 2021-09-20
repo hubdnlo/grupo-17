@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap');
+
+/* Global */
+
+*
+{
+  margin: 0;
+  padding: 0;
+}
+
+html, body
+{
+    height: 100%;
+    width: 100%;
+}
+
+body
+{
+  background-color: #e6e6e6;
+}
+
+body, input, select, textarea
+{
+    font-family: "Lato", sans-serif;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3
+{
+  color: darkslateblue;
+  font-size: 22;
+}
+
+p
+{
+    line-height: 1.5em;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+#conteudo
+{
+  padding: 1em;
+}
+
+#cabecalho
+{
+  background-color: #18a2a2;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+
+#cabecalho h1
+{
+  color: white;
+}
+
+#navbar
+{
+  display: flex;
+  font-size: 25;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+#navbar a
+{
+    background-color: transparent;
+    border-radius: 5px;
+    color: #18a2a2;
+    font-weight: bold;
+    padding: 10px;
+}
+
+#navbar a:hover
+{
+    background-color: #18a2a2;
+    color: white;
+}
+
+/* Início */
+
+#imgSite, #imgSiteNos
+{
+  height: 40%;
+  width: 100%;
+}
+
+#tituloDestaque, #tituloDestaqueNos
+{
+  display: flex;
+  font-size: 15px;
+  justify-content: center;
+  padding: 20px;
+}
+
+#tituloDestaque h2, #tituloDestaqueNos h2
+{
+    color: #0375B3;
+}
+
+#noticia, #perfil
+{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.noticiaDestaque, .perfilDestaque
+{
+  line-height: 1.6em;
+  margin-right: 5px;
+  text-align: justify;
+}
+
+.noticiaDestaque, .infoPerfil
+{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.noticiaDestaque img
+{
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+.video, .audio
+{
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    margin-top: 20px;
+}
+
+.video iframe, .audio audio
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.audio
+{
+    padding-bottom: 28.125%;
+}
+
+/* Quem somos */
+
+.infoPerfil
+{
+    background-color: rgba(24, 162, 162, 0.2);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.infoPerfil .imgPerfil
+{
+  margin-bottom: 10px;
+  height: 124px;
+}
+
+.infoPerfil .perfilDestaque
+{
+  font-size: 18;
+}
+
+.infoPerfil a
+{
+    background-color: #0375B3;
+    color: white;
+    display: block;
+    padding: 5px;
+    margin-top: 30px;
+    text-align: center;
+    width: 80px;
+}
+
+.infoPerfil a:hover
+{
+    background-color: #18a2a2;
+}
+
+/* Contato */
+
+.row
+{
+  display: table;
+  padding: 0 20px;
+  width: 100%;
+}
+
+form
+{
+  border-radius: 10px;
+  box-shadow: 0 4px 8px #999999;
+  color: #0375B3;
+  margin: 0 auto;
+  padding: 20px;
+  width: 50%;
+}
+
+input,
+textarea
+{
+  border: 1px solid #18a2a2;
+  font: 1em sans-serif;
+  margin-bottom: 1em;
+  padding: 10px;
+  width: 96%;
+}
+
+label
+{
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+button
+{
+  background-color: white;
+  border: 1px solid #18a2a2;
+  border-radius: 3px;
+  color: #18a2a2;
+  font-weight: bold;
+  padding: 15px;
+}
+
+button:hover
+{
+  background-color: #18a2a2;
+  color: white;
+  cursor: pointer;
+}
+
+input:focus,
+textarea:focus
+{
+  border-color: #0375B3 !important;
+}
+
+input:invalid,
+textarea:invalid
+{
+  border-color: khaki;
+}
+
+/* Saiba mais */
+
+#saibaMais
+{
+  margin-bottom: 20px;
+}
+
+#saibaMais h2
+{
+  color: #18a2a2;
+  font-size: 20px;
+}
+
+.lista-saiba
+{
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.lista-saiba a
+{
+  background-color: transparent;
+  border-radius: 5px;
+  color: #0375B3;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.lista-saiba a:hover
+{
+  background-color: #18a2a2;
+  color: whitesmoke;
+}
+
+
+@media screen and (max-width: 768px)
+{
+  form
+  {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px)
+{
+  button
+  {
+    width: 100%;
+  }
+}
+
+
